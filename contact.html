@@ -7,6 +7,7 @@
         <link rel="icon" type="image/png" href="images/nj-logo.png"/>
         <!-- icon courtesy of Adnen Kadri. Link: https://thenounproject.com/term/new-jersey/1695191/ -->
         <link rel='stylesheet' href='css/html5reset.css'>
+        <link rel="stylesheet" href="css/style.css">
         <!-- <link rel="stylesheet"> -->
         <!-- might have to add link for lightbox -->
     </head>
@@ -21,7 +22,31 @@
             </nav>
         </header>
         <main>
+            <form id="contact-form" action="https://formspree.io/f/xleongyo" method="POST">
+                <fieldset>
+                    <legend>Contact Me!</legend>
+                    
+                    <label for="name_id">Your Name:</label>
+                    <input type="text" placeholder="Enter Your Name" id="name_id" name="name" required>
+              
+                    <label for="email_id">Your Email</label>
+                    <input type="email" placeholder="Enter Your Email" id="email_id" name="email" required>
+              
+                    <label for="subject_id">Subject Line</label>
+                    <input type="text" placeholder="Enter your subject line" id="subject_id" name="subject" required>
+                  
+                    <label for="message">Message</label>
+                    <textarea placeholder="Enter your message" id="message" name="message" required></textarea>
+                    
+                    <label for="food">What is your favorite food?</label>
+                    <textarea placeholder="Enter your favorite food here" id="food" name="food"></textarea>
+              
+                    <input type="checkbox" checked="checked" name="remember" id = "cBox"> 
+                    <label for ="cBox">Remember me</label>
 
+                    <input type="submit" value="Contact Me">
+                </fieldset>
+               </form>
         </main>
         <footer>
             
