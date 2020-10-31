@@ -8,22 +8,32 @@
         <!-- icon courtesy of Adnen Kadri. Link: https://thenounproject.com/term/new-jersey/1695191/ -->
         <link rel='stylesheet' href='css/html5reset.css'>
         <link rel="stylesheet" href="css/style.css">
-        <!-- <link rel="stylesheet"> -->
-        <!-- might have to add link for lightbox -->
+
+        <script src="https://kit.fontawesome.com/a2758ad162.js" crossorigin="anonymous"></script>
+        <script src="js/nav.js"></script>
     </head>
     <body>
         <header>
+            <h1  id="main-title">The Food of New Jersey</h1>
             <nav>
-                <a href="index.html" class="nav-item">Home</a>
-                <a href="top_restaurants.html" class="nav-item active">Top Restaurants</a>
-                <a href="gallery.html" class="nav-item">Gallery</a>
-                <a href="nj_food.html" class="nav-item">NJ Food</a>
-                <a href="contact.html" class="nav-item">Contact</a>
+                <div class="nav">
+                    <a  id="menu-title" class="active">Menu</a>
+                    <div id="links">
+                        <a href="index.html">Home</a>
+                        <a href="top_restaurants.html" class="active">Top Restaurants</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="nj_food.html">NJ Food</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                      <i class="fa fa-bars"></i>
+                    </a>
+                  </div>
             </nav>
         </header>
         <h1>Top Restaurants</h1>
         <!-- should every box have a link to the restaurant page? -->
-        <a href="#main-content">Jump to Content</a>
+        <a href="#restaurants">Jump to Content</a>
         <figure>
             <img src="images/razzapizza.jpg" alt="Outdoor dining at Razza Pizza">
             <figcaption>Known as one of the best pizza places in New Jersey, Razza Pizza offers outdoor dining.</figcaption>
@@ -31,14 +41,14 @@
             <!-- hidden on mobile view -->
         </figure>
 
-        <main id="main-content">
+        <main id="restaurants">
 
             <div class="restaurant">
-                <h2 class="name">DeLorenzo's Tomato Pies</h2>
+                <h2 class="name">De Lorenzo's Tomato Pies</h2>
                 <h3>Robbinsville</h3>
                 <!-- image (hidden for mobile view...comes out when screen gets larger-->
-                <p>This historic restaurant is known for their unique take on pizza. At DeLorenzo’s, the tomato pie is
-                     made by putting the cheese first and the pizza sauce on top. Originally, DeLorenzo’s was located in Trenton, 
+                <p>This historic restaurant is known for their unique take on pizza. At De Lorenzo’s, the tomato pie is
+                     made by putting the cheese first and the pizza sauce on top. Originally, De Lorenzo’s was located in Trenton, 
                      but now it is in Robbinsville. Their new location is much more modern than the original shop, but the pizza is 
                      just as good. 
                 </p>
@@ -166,7 +176,9 @@
 
         </main>
         <footer>
-            
+            <a href="https://www.linkedin.com/in/catherine-grillo-491717181/" target="_blank" aria-label="LinkedIn Profile">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
         </footer>
     </body>
 </html>

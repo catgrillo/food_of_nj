@@ -1,7 +1,94 @@
 body{
     font-family: Georgia, serif;
+    margin-bottom: 0;
+}
+.fa-linkedin{
+    color: #535353;
 }
 
+footer{
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+}
+
+/* nav{
+    display: flex;
+    justify-content: flex-end;
+} */
+
+#main-title{
+    font-size: 200%;
+    text-align: center;
+    background-color: #d2e2ee;
+    color: #535353;
+    padding: 10px;
+}
+
+#boardwalk{
+    margin: 10px 0px 10px 0px;
+}
+
+.Atlantic-City{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+} 
+
+figcaption{
+    text-align: center;
+    color: #535353;
+    font-size: 75%;
+}
+
+#main-content{
+    background-image: url(../images/swt.jpg);
+    /* Photo courtesy of Candy Nation...link: https://www.candynation.com/fralingers-salt-water-taffy-candy */
+    background-attachment: fixed; /* Parallax effect */     
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+}
+
+.home-content{
+    background-color: #ffffff;
+    color: #535353;
+}
+
+nav{
+    background-color: #d2e2ee;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .active{
+    background-color: #d2e2ee;
+    border: 1px solid #535353;
+}
+  
 #contact-form{
     /* border: 2px solid #a9ba9d; */
     background-color: #d2e2ee;
@@ -63,4 +150,70 @@ body{
     border: 1px solid #535353;
     transition: .5s;
 }
+
+#gallery-content{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 5px;
+    justify-items: center;
+}
+
+#gallery-content img{
+    width: 300px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 15px;
+    border: 2px solid #d2e2ee;  
+}
+
+
+/* Nav Bar styling */
+/* The layout was taken from W3Schools example, I changed the colors used and added borders */
+
+.nav {
+    overflow: hidden;
+    background-color: #ffffff;
+    position: relative;
+  }
   
+  .nav #links {
+    display: none;
+  }
+  
+  .nav a {
+    color: #535353;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .nav a.icon {
+    background: #d2e2ee;
+    border: 2px solid #ffffff;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .nav a:hover {
+    background-color: #ffffff;
+    color: black;
+  }
+  
+  .active {
+    background-color: #d2e2ee;
+    color: #ffffff;
+  }
+
+  nav{
+    width: 100%;
+  }
+
+  #menu-title{
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 50px;
+      text-transform: uppercase;
+  }

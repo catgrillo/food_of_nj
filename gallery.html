@@ -8,34 +8,63 @@
         <!-- icon courtesy of Adnen Kadri. Link: https://thenounproject.com/term/new-jersey/1695191/ -->
         <link rel='stylesheet' href='css/html5reset.css'>
         <link rel="stylesheet" href="css/style.css">
+
+        <script src="https://kit.fontawesome.com/a2758ad162.js" crossorigin="anonymous"></script>
+        <script src="js/nav.js"></script>
         <!-- <link rel="stylesheet"> -->
         <!-- might have to add link for lightbox -->
     </head>
     <body>
         <header>
+            <h1  id="main-title">The Food of New Jersey</h1>
             <nav>
-                <a href="index.html" class="nav-item">Home</a>
-                <a href="top_restaurants.html" class="nav-item">Top Restaurants</a>
-                <a href="gallery.html" class="nav-item active">Gallery</a>
-                <a href="nj_food.html" class="nav-item">NJ Food</a>
-                <a href="contact.html" class="nav-item">Contact</a>
+                <div class="nav">
+                    <a  id="menu-title" class="active">Menu</a>
+                    <div id="links">
+                        <a href="index.html">Home</a>
+                        <a href="top_restaurants.html">Top Restaurants</a>
+                        <a href="gallery.html" class="active">Gallery</a>
+                        <a href="nj_food.html">NJ Food</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                      <i class="fa fa-bars"></i>
+                    </a>
+                  </div>
             </nav>
         </header>
         <main>
             <h1>Gallery</h1>
-            <a href="#main-content">Jump to Content</a>
-            <div class="main-content">
+            <a href="#gallery-content">Jump to Content</a>
+            <div id="gallery-content">
                 <!-- use lightbox so you can add captions -->
 
                 <img src="images/atlatic_city_boardwalk.jpg" alt="Shops along the Atlantic City Boardwalk">
                 <!--Photo courtesy of Pixabay images...link: https://pixabay.com/photos/atlantic-city-boardwalk-new-jersey-3812182/  -->
 
                 <img src="images/razzapizza.jpg" alt="Outdoor dinning at Razza Pizza Artigianale">
-                <!-- Photo Courtesy of Bryan Anselm for The New York Times...link: https://www.nytimes.com/2017/09/12/dining/razza-pizza-review-jersey-city.html -->
+                <!-- Photo courtesy of Bryan Anselm for The New York Times...link: https://www.nytimes.com/2017/09/12/dining/razza-pizza-review-jersey-city.html -->
 
                 <img src="images/ticktockdiner.jpg" alt="Exterior of the Tick Tock Diner">
                 <!-- need to find source for this picture -->
 
+                <img src="images/fralingers.jpg" alt="Exterior of Fralinger's Salt Water Taffy">
+                <!-- Photo courtesy of Tom Simpson through Time Out Media Comapny...link: https://www.timeout.com/atlantic-city/restaurants/fralingers-salt-water-taffy -->
+
+                <img src="images/pec.jpeg" alt="Pork roll egg and cheese sandwhich">
+                <!-- Photo courtesy of Miller's East Coast Deli...link: https://www.eater.com/2015/7/16/8962643/pork-roll-taylor-ham-new-jersey -->
+
+                <img src="images/delorenzos.jpg" alt="Pizza from De Lorenzo's">
+                <!-- Photo courtesy of De Lorenzo's website...link: https://www.delorenzostomatopies.com/our-story -->
+
+                <img src="images/sloppy.jpg" alt="New Jersey style sloppy joe sandwich">
+                <!-- Photo courtesy of https://www.sandwichtribunal.com/2019/03/new-jerseys-sloppy-joes-town-hall-deli/ -->
+
+                <img src="images/italianhotdog.jpg" alt="Italian Hot Dog">
+                <!-- Photo courtesy of https://www.pinterest.com/pin/357121445436212456/ -->
+
+                <img src="images/disco.jpg" alt="disco fries">
+                <!-- Photo courtesy of https://www.mantitlement.com/disco-fries-casserole/ -->
                 <!-- pictures of PEC sandwhich, Sloppy Joe, other restaurants -->
             </div>
         </main>

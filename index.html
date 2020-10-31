@@ -8,41 +8,84 @@
         <!-- icon courtesy of Adnen Kadri. Link: https://thenounproject.com/term/new-jersey/1695191/ -->
         <link rel='stylesheet' href='css/html5reset.css'>
         <link rel="stylesheet" href="css/style.css">
-        <!-- <link rel="stylesheet"> -->
-        <!-- might have to add link for lightbox -->
+
+        <script src="https://kit.fontawesome.com/a2758ad162.js" crossorigin="anonymous"></script>
+        <script src="js/nav.js"></script>
     </head>
     <body>
         <header>
+            <h1  id="main-title">The Food of New Jersey</h1>
             <nav>
-                <a href="index.html" class="nav-item active">Home</a>
-                <a href="top_restaurants.html" class="nav-item">Top Restaurants</a>
-                <a href="gallery.html" class="nav-item">Gallery</a>
-                <a href="nj_food.html" class="nav-item">NJ Food</a>
-                <a href="contact.html" class="nav-item">Contact</a>
+                <div class="nav">
+                    <a  id="menu-title" class="active">Menu</a>
+                    <div id="links">
+                        <a href="index.html" class="active">Home</a>
+                        <a href="top_restaurants.html">Top Restaurants</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="nj_food.html">NJ Food</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                      <i class="fa fa-bars"></i>
+                    </a>
+                  </div>
             </nav>
+
+            <!-- <nav>
+                <div class="dropdown">
+                    <button class="dropbtn" title="Menu Dropdown"><i class="fas fa-bars fa-2x"></i></button>
+                    <div class="dropdown-content">
+                        <a href="index.html" class="active">Home</a>
+                        <a href="top_restaurants.html">Top Restaurants</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="nj_food.html">NJ Food</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </nav> -->
+
         </header>
         <main>
-            <h1>The Food of New Jersey</h1>
             <a href="#main-content">Jump to Content</a>
-            <figure>
-                <img src="images/atlatic_city_boardwalk.jpg" alt="Different shops along the Atlantic City boardwalk">
+
+
+            <figure id="boardwalk">
+                <img class="Atlantic-City" src="images/atlatic_city_boardwalk.jpg" alt="Different shops along the Atlantic City boardwalk">
                 <figcaption>
-                    There are different places to eat line the iconic Atlantic City Boardwalk. Here, we see cheesesteak, saltwater
-                    taffy, pizza, and ice cream along one short stretch of the boards. Photo courtesty of Pixabay images
+                    All kinds of shops line the iconic Atlantic City Boardwalk. Here we see cheesesteak, saltwater
+                    taffy, pizza, and ice cream along one short stretch of the boards.
                      <!--Photo courtesy of Pixabay images...link: https://pixabay.com/photos/atlantic-city-boardwalk-new-jersey-3812182/  -->
                 </figcaption>
             </figure>
 
+
             <!-- sources: https://www.visitnj.org/article/iconic-new-jersey-foods -->
             <div id="main-content">
-                <p>From pork roll, to saltwater taffy, to the Italian hot dog, New Jersey is full of unique and amazing foods.
-                Whether you are walking along the boardwalk or into a deli, you know that in New Jersey you will find quality food. 
-                Located in the north east, many people know both New Jersey and New York have the best bagels and pizza. 
-                New Jersey and New York can be compared in many different aspects, but besides bagels and pizza, food is one where
-                the two states differ. New Jersey offers a rich variety of options from food trucks, to delis, to diners, and more. 
-                Fine cuisine is also not hard to find, the people of New Jersey love to indulge in all different kinds of food. </p>
-
-                <h2>Types of Dining</h2>
+                <div class="home-content">
+                    <p>From pork roll, to saltwater taffy, to the Italian hot dog, New Jersey is full of unique and amazing foods.
+                        Whether you are walking along the boardwalk or into a deli, you know that in New Jersey you will find quality food. 
+                        Located in the north east, many people know both New Jersey and New York have the best bagels and pizza. 
+                        New Jersey and New York can be compared in many different aspects, but besides bagels and pizza, food is one where
+                        the two states differ. New Jersey offers a rich variety of options from food trucks, to delis, to diners, and more. 
+                        Fine cuisine is also not hard to find, the people of New Jersey love to indulge in all different kinds of food. 
+                    </p>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="home-content">
+                   <h2>Types of Dining</h2>
 
                 <p>     One style of dining that is extremely popular is going to a diner. If you are ever in New Jersey, 
                     one thing is for sure, you will see diners everywhere you go. People eat at diners after a night out, 
@@ -53,11 +96,15 @@
                         Another popular dining style is at a delicatessen. You can choose basically anything you want to eat here. 
                     There are soups, cold salads, hot salads, kitchen items, cold cuts, hot and colds sandwiches, and much more.
                     Delis are extremely versatile in their offerings and you know that if you go to one you will always find something that you like, or you can ask for a custom item and the cooks will make it.
-                </p>
+                </p> 
+                </div>
+                
             </div>
         </main>
         <footer>
-
+            <a href="https://www.linkedin.com/in/catherine-grillo-491717181/" target="_blank" aria-label="LinkedIn Profile">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
         </footer>
     </body>
 </html>
