@@ -27,6 +27,8 @@ footer{
 
 #boardwalk{
     margin: 10px 0px 10px 0px;
+    border: 2px solid #cacaca;
+    padding: 5px;
 }
 
 .Atlantic-City{
@@ -197,10 +199,10 @@ nav{
     top: 0;
   }
   
-  /* .nav a:hover {
+  .nav a:hover {
     background-color: #ffffff;
     color: black;
-  } */
+  }
   
   .active {
     background-color: #d2e2ee;
