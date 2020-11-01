@@ -3,7 +3,23 @@ body{
     margin-bottom: 0;
 }
 
-
+@-webkit-keyframes name_expand{
+    from {
+      font-size: 150%;
+    }
+    to {
+      font-size: 200%;
+    }
+}
+  
+  @keyframes name_expand{
+    from {
+        font-size: 150%;
+    }
+    to {
+        font-size: 200%;
+    }
+}
 
 /* footer styling */
 
@@ -91,6 +107,8 @@ footer p{
     font-size: 200%;
     margin: 10px 10px 0px 0px;
     padding: 10px;
+    animation-name: name_expand;
+    animation-duration: 2s;
 }
 
 .name{
@@ -141,6 +159,7 @@ figure, #boardwalk{
     margin-right: 5px;
     margin-left: 5px;
     border: 2px solid #cacaca;
+    border-radius: 10px;
     padding: 5px;
 }
 
@@ -176,6 +195,7 @@ figcaption{
     margin: 10px;
     padding: 5px;
     width: fit-content;
+    z-index: 1;
 }
 
 .jump:active{
@@ -212,7 +232,9 @@ figcaption{
 .gallery-heading{
     font-size: 200%;
     margin: 10px 10px 0px 0px;
-    padding: 10px;   
+    padding: 10px;
+    animation-name: name_expand;
+    animation-duration: 2s;
 }
 
 
