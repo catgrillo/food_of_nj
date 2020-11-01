@@ -31,11 +31,18 @@
                   </div>
             </nav>
         </header>
-        <h1>Top Restaurants</h1>
+        <h1 id="top">Top Restaurants</h1>
         <!-- should every box have a link to the restaurant page? -->
-        <a href="#restaurants">Jump to Content</a>
+        <a class="jump" href="#restaurants">Jump to Content</a>
+
+        <p class="restaurant-intro">
+            New Jersey is home to many amazing restaurants. Here are a few well-known, and even iconic locations
+            in the Garden State. This is by no means a comprehensive list, but all the restaurants listed below, 
+            from diners to fine dining, are acclaimed and very highly rated.
+        </p>
+
         <figure>
-            <img src="images/razzapizza.jpg" alt="Outdoor dining at Razza Pizza">
+            <img class="razza-heading" src="images/razzapizza.jpg" alt="Outdoor dining at Razza Pizza">
             <figcaption>Known as one of the best pizza places in New Jersey, Razza Pizza offers outdoor dining.</figcaption>
             <!-- Photo Courtesy of Bryan Anselm for The New York Times...link: https://www.nytimes.com/2017/09/12/dining/razza-pizza-review-jersey-city.html -->
             <!-- hidden on mobile view -->
@@ -46,6 +53,8 @@
             <div class="restaurant">
                 <h2 class="name">De Lorenzo's Tomato Pies</h2>
                 <h3>Robbinsville</h3>
+                <img class="restaurant-img">
+                <br>
                 <!-- image (hidden for mobile view...comes out when screen gets larger-->
                 <p>This historic restaurant is known for their unique take on pizza. At De Lorenzo’s, the tomato pie is
                      made by putting the cheese first and the pizza sauce on top. Originally, De Lorenzo’s was located in Trenton, 
@@ -59,6 +68,8 @@
             <div class="restaurant">
                 <h2 class="name">Mustache Bill’s Diner</h2>
                 <h3>Barnegat Light</h3>
+                <img class="restaurant-img">
+                <br>
                 <!-- image (hidden for mobile view...comes out when screen gets larger-->
                 <p>
                     Featured on Diners, Drive-ins, and Dives, this diner – located on Long Beach Island – is known for its fresh 
@@ -74,6 +85,8 @@
             <div class="restaurant">
                 <h2 class="name">Chez Catherine</h2>
                 <h3>Westfield</h3>
+                <img class="restaurant-img">
+                <br>
                 <!-- image (hidden for mobile view...comes out when screen gets larger-->
                 <p>
                     Known for its superior French Cuisine, Chez Catherine offers a fine dining experience. It is recognized as 
@@ -90,6 +103,8 @@
             <div class="restaurant">
                 <h2 class="name">10th Ave Burrito Co.</h2>
                 <h3>Belmar</h3>
+                <img class="restaurant-img">
+                <br>
                 <!-- image (hidden for mobile view...comes out when screen gets larger-->
                 <p>
                     10th Ave Burrito offers delicious Mexi-Cali cuisine. Featured on Diners, Drive-ins, and Dives, offers 
@@ -105,6 +120,8 @@
             <div class="restaurant">
                 <h2 class="name">Zeppoli</h2>
                 <h3>Collingswood</h3>
+                <img class="restaurant-img">
+                <br>
                 <!-- image (hidden for mobile view...comes out when screen gets larger-->
                 <p>
                     There is an abundance of Italian American restaurants scattered around New Jersey, and Zeppoli is one of 
@@ -120,6 +137,8 @@
             <div class="restaurant">
                 <h2 class="name">Razza Pizza Artigianale</h2>
                 <h3>Jersey City</h3>
+                <img class="restaurant-img">
+                <br>
                 <!-- image (hidden for mobile view...comes out when screen gets larger-->
                 <p>
                     Razza Pizza Artigianale is not only known for their pizza, but the fresh bread too. Razza Pizza is known 
@@ -136,6 +155,8 @@
             <div class="restaurant">
                 <h2 class="name">Tick Tock Diner</h2>
                 <h3>Clifton</h3>
+                <img class="restaurant-img">
+                <br>
                 <!-- image (hidden for mobile view...comes out when screen gets larger-->
                 <p>
                     This diner is almost as authentic as you can get. Featured on Diners, Drive-ins and Dives, Tick Tock Diner 
@@ -150,6 +171,8 @@
             <div class="restaurant">
                 <h2 class="name">Aarzu</h2>
                 <h3>Freehold</h3>
+                <img class="restaurant-img">
+                <br>
                 <!-- image (hidden for mobile view...comes out when screen gets larger-->
                 <p>
                     Aarzu Modern Indian Bistro offers an upscale dining experience in Downtown Freehold. Aarzu’s modern take on 
@@ -165,6 +188,8 @@
             <div class="restaurant">
                 <h2 class="name">Caf&eacute; Chameleon</h2>
                 <h3>Bloomingdale</h3>
+                <img class="restaurant-img">
+                <br>
                 <!-- image (hidden for mobile view...comes out when screen gets larger-->
                 <p>
                     Caf&eacute; Chameleon is modernizing American cuisine. Known for its frequently changing menu and fresh ingredients, 
@@ -176,9 +201,13 @@
 
         </main>
         <footer>
-            <a href="https://www.linkedin.com/in/catherine-grillo-491717181/" target="_blank" aria-label="LinkedIn Profile">
-                <i class="fab fa-linkedin fa-2x"></i>
+            <a class="footer-link" href="https://www.linkedin.com/in/catherine-grillo-491717181/" target="_blank" aria-label="LinkedIn Profile">
+                <i class="fab fa-linkedin fa-2x footer-icon"></i>
             </a>
+            <a class="footer-link" href="https://github.com/catgrillo" target="_blank" aria-label="GitHub Profile">
+                <i class="fab fa-github-square fa-2x footer-icon"></i>
+            </a>
+            <p>&#169; Catherine Grillo 2020</p>
         </footer>
     </body>
 </html>

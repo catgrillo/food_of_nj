@@ -15,6 +15,9 @@
     <body>
         <header>
             <h1  id="main-title">The Food of New Jersey</h1>
+
+            <!-- in tablet/desktop view....should I do a pic of the state next to the title? -->
+
             <nav>
                 <div class="nav">
                     <a  id="menu-title" class="active">Menu</a>
@@ -30,22 +33,9 @@
                     </a>
                   </div>
             </nav>
-            <!-- <nav>
-                <div class="dropdown">
-                    <button class="dropbtn" title="Menu Dropdown"><i class="fas fa-bars fa-2x"></i></button>
-                    <div class="dropdown-content">
-                        <a href="index.html" class="active">Home</a>
-                        <a href="top_restaurants.html">Top Restaurants</a>
-                        <a href="gallery.html">Gallery</a>
-                        <a href="nj_food.html">NJ Food</a>
-                        <a href="contact.html">Contact</a>
-                    </div>
-                </div>
-            </nav> -->
-
         </header>
         <main>
-            <a href="#main-content">Jump to Content</a>
+            <a class="jump" href="#main-content">Jump to Content</a>
 
 
             <figure id="boardwalk">
@@ -60,7 +50,7 @@
 
             <!-- sources: https://www.visitnj.org/article/iconic-new-jersey-foods -->
             <div id="main-content">
-                <div class="home-content">
+                <div class="home-content one">
                     <p>From pork roll, to saltwater taffy, to the Italian hot dog, New Jersey is full of unique and amazing foods.
                         Whether you are walking along the boardwalk or into a deli, you know that in New Jersey you will find quality food. 
                         Located in the north east, many people know both New Jersey and New York have the best bagels and pizza. 
@@ -69,22 +59,9 @@
                         Fine cuisine is also not hard to find, the people of New Jersey love to indulge in all different kinds of food. 
                     </p>
                 </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div class="home-content">
-                   <h2>Types of Dining</h2>
+
+                <div class="home-content two">
+                   <h2 id="dining-types">Types of Dining</h2>
 
                 <p>     One style of dining that is extremely popular is going to a diner. If you are ever in New Jersey, 
                     one thing is for sure, you will see diners everywhere you go. People eat at diners after a night out, 
@@ -101,9 +78,13 @@
             </div>
         </main>
         <footer>
-            <a href="https://www.linkedin.com/in/catherine-grillo-491717181/" target="_blank" aria-label="LinkedIn Profile">
-                <i class="fab fa-linkedin fa-2x"></i>
+            <a class="footer-link" href="https://www.linkedin.com/in/catherine-grillo-491717181/" target="_blank" aria-label="LinkedIn Profile">
+                <i class="fab fa-linkedin fa-2x footer-icon"></i>
             </a>
+            <a class="footer-link" href="https://github.com/catgrillo" target="_blank" aria-label="GitHub Profile">
+                <i class="fab fa-github-square fa-2x footer-icon"></i>
+            </a>
+            <p>&#169; Catherine Grillo 2020</p>
         </footer>
     </body>
 </html>

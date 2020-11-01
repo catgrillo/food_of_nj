@@ -2,45 +2,50 @@ body{
     font-family: Georgia, serif;
     margin-bottom: 0;
 }
-.fa-linkedin{
-    color: #535353;
-}
+
+
+
+/* footer styling */
 
 footer{
     position: relative;
     bottom: 0px;
     left: 0px;
-}
-
-/* nav{
-    display: flex;
-    justify-content: flex-end;
-} */
-
-#main-title{
-    font-size: 200%;
-    text-align: center;
     background-color: #d2e2ee;
-    color: #535353;
+    height: 75px;
+}
+
+.footer-link{
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+ footer .footer-icon{
     padding: 10px;
-}
-
-#boardwalk{
-    margin: 10px 0px 10px 0px;
-    border: 2px solid #cacaca;
-    padding: 5px;
-}
-
-.Atlantic-City{
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-} 
-
-figcaption{
-    text-align: center;
     color: #535353;
-    font-size: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+footer p{
+    display: inline-block;
+    color: #535353;
+    position: relative;
+    top: -7px;
+    left: 20px;
+}
+
+
+
+/* Front page styling*/
+#dining-types{
+    color: #000000;
+    padding: 10px 10px 10px 0px;
+    text-transform: uppercase;
 }
 
 #main-content{
@@ -57,101 +62,134 @@ figcaption{
     color: #535353;
 }
 
-nav{
-    background-color: #d2e2ee;
-}
-
-.dropdown{
-    position: relative;
-    display: inline-block;
-}
-  
-.dropdown-content{
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-  
-.dropdown-content a{
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-  
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .active{
-    background-color: #d2e2ee;
-    border: 1px solid #535353;
-}
-  
-#contact-form{
-    /* border: 2px solid #a9ba9d; */
-    background-color: #d2e2ee;
-    width: 80%;
-    margin: 0 auto;
+.one{
+    margin-bottom: 50%;
     padding: 10px;
-    margin-top: 10px;
+    line-height: 20px;
+}
+
+.two{
+    margin-top: 50%;
+    padding: 10px;
+    line-height: 20px;
+}
+
+
+
+/* top restaurants styling */
+.restaurant-img{
+    display: none;
+}
+
+.restaurant-intro{
+    line-height: 20px;
+    color: #535353;
+    padding: 10px;
+}
+
+#top{
+    font-size: 200%;
+    margin: 10px 10px 0px 0px;
+    padding: 10px;
+}
+
+.name{
+    color: #000000;
+    font-size: 115%;
+}
+
+#restaurants{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+}
+
+.restaurant{
+    border: 2px solid #d2e2ee;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.restaurant h3{
+    font-size: 90%;
+}
+
+.restaurant p, h3{
     color: #535353;
 }
 
-#contact-form label{
-    display: inline-block;
-    margin-right:10px;
-    width: 70%;
-    margin-top: 15px;
-    margin-bottom: 0;
+.restaurant p{
+    line-height: 20px;
 }
 
-#contact-form input {
-    width: 100%;
+
+/* top heading styling */
+#main-title{
+    font-size: 250%;
+    text-align: center;
+    background-color: #d2e2ee;
+    color: #535353;
     padding: 10px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
 }
 
-#contact-form textarea{
+
+
+/* top picture styling */
+figure, #boardwalk{
+    margin: 0px;
+    border: 2px solid #cacaca;
+    padding: 5px;
+}
+
+.razza-heading{
     width: 100%;
-    height: 20vh;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-  
-#contact-form #remember{
-      padding-bottom: 10px;
-      margin: 2%;
-}
-
-#contact-form input[type=checkbox]{
-    display:inline;
-    width:inherit;
-}
-  
-#contact-form input[type=submit]{
     display: block;
-    background-color: #ffffff;
-    border: none;   
-    color: #000000;
-    width: 60%;
-    padding: 10px;
     margin: 0 auto;
 }
 
-#contact-form input[type=submit]:hover{
-    background-color: #B6CEE2;
-    border: 1px solid #535353;
-    transition: .5s;
+.Atlantic-City{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+} 
+
+figcaption{
+    text-align: center;
+    color: #535353;
+    font-size: 90%;
 }
+
+
+
+/* Jump to content styling */
+
+.jump{
+    text-decoration: none;
+    color: #535353;
+    background-color: #d2e2ee;
+    border: 1px solid #cacaca;
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+    width: fit-content;
+}
+
+.jump:active{
+    background-color: #cacaca;
+    color: #535353;
+    border: 2px solid #d2e2ee;
+}
+
+.jump:hover{
+    background-color: #cacaca;
+    color: #535353;
+    border: 2px solid #d2e2ee;
+}
+
+
+
+/* Gallery styling */
 
 #gallery-content{
     display: grid;
@@ -167,6 +205,13 @@ nav{
     border-radius: 15px;
     border: 2px solid #d2e2ee;  
 }
+
+.gallery-heading{
+    font-size: 200%;
+    margin: 10px 10px 0px 0px;
+    padding: 10px;   
+}
+
 
 
 /* Nav Bar styling */
@@ -200,7 +245,7 @@ nav{
   }
   
   .nav a:hover {
-    background-color: #ffffff;
+    background-color: #d2e2ee;
     color: black;
   }
   
