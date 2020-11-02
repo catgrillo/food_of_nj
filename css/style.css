@@ -119,15 +119,15 @@ footer p{
 
 #restaurants{
     margin: 10px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row-gap: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .restaurant{
     border: 2px solid #d2e2ee;
     padding: 10px;
     border-radius: 10px;
+    margin: 5px 0px 5px 0px;
 }
 
 .restaurant h3{
@@ -241,7 +241,7 @@ figcaption{
 
 
 /* Nav Bar styling */
-/* The layout was taken from W3Schools example, I changed the colors used and added borders */
+/* The layout was modeled after W3Schools example, I changed the colors and styling to fit my site specifically */
 
 .nav {
     overflow: hidden;
@@ -249,7 +249,7 @@ figcaption{
     position: relative;
   }
   
-  .nav #links {
+  .nav #pages {
     display: none;
   }
   
@@ -278,6 +278,7 @@ figcaption{
   .active {
     background-color: #d2e2ee;
     color: #ffffff;
+    text-transform: uppercase;
   }
 
   nav{
