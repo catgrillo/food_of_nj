@@ -93,6 +93,7 @@ footer p{
 
 
 /* top restaurants styling */
+/* make top restaurants a flex item */
 .restaurant-img{
     display: none;
 }
