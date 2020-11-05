@@ -21,6 +21,57 @@ body{
     }
 }
 
+.page-header{
+    font-size: 200%;
+    margin: 10px 10px 0px 0px;
+    padding: 10px;
+    animation-name: name_expand;
+    animation-duration: 2s;
+}
+
+/* flip card */
+.card{
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+}
+
+.card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:active .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.card-front{
+    background-color: #bbb;
+    color: black;
+}
+
+.card-back{
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+
+
 /* footer styling */
 
 footer{
@@ -102,14 +153,6 @@ footer p{
     line-height: 20px;
     color: #535353;
     padding: 10px;
-}
-
-#top{
-    font-size: 200%;
-    margin: 10px 10px 0px 0px;
-    padding: 10px;
-    animation-name: name_expand;
-    animation-duration: 2s;
 }
 
 .name{
@@ -197,6 +240,8 @@ figcaption{
     padding: 5px;
     width: fit-content;
     z-index: 1;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
 }
 
 .jump:active{
@@ -230,15 +275,42 @@ figcaption{
     border: 2px solid #d2e2ee;  
 }
 
-.gallery-heading{
-    font-size: 200%;
-    margin: 10px 10px 0px 0px;
-    padding: 10px;
-    animation-name: name_expand;
-    animation-duration: 2s;
+
+
+/* NJ Food Styling */
+#nj-food-pic{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
+.nj-food{
+    border: 2px solid #d2e2ee;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0px 5px 0px;
+}
 
+.nj-food-pic{
+    width: 100%;
+}
+
+.food-name{
+    margin: 5px;
+    font-size: 125%;
+}
+
+.nj-food p{
+    color: #535353;
+}
+
+#grid-container{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 5px;
+    justify-items: center;
+}
 
 /* Nav Bar styling */
 /* The layout was modeled after W3Schools example, I changed the colors and styling to fit my site specifically */
