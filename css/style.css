@@ -319,11 +319,11 @@ figcaption{
     overflow: hidden;
     background-color: #ffffff;
     position: relative;
-  }
+}
   
   .nav #pages {
     display: none;
-  }
+}
   
   .nav a {
     color: #535353;
@@ -331,7 +331,7 @@ figcaption{
     text-decoration: none;
     font-size: 17px;
     display: block;
-  }
+}
   
   .nav a.icon {
     background: #d2e2ee;
@@ -340,26 +340,32 @@ figcaption{
     position: absolute;
     right: 0;
     top: 0;
-  }
+}
   
   .nav a:hover {
     background-color: #d2e2ee;
     color: black;
-  }
+}
   
   .active {
     background-color: #d2e2ee;
     color: #ffffff;
     text-transform: uppercase;
-  }
+}
 
   nav{
     width: 100%;
-  }
+}
 
   #menu-title{
       display: flex;
       justify-content: flex-end;
       margin-right: 50px;
       text-transform: uppercase;
+}
+
+@media (prefers-reduced-motion: reduce){
+    .page-header{
+      animation: none;
+    }
   }
