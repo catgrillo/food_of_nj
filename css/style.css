@@ -8,7 +8,7 @@ body{
       font-size: 150%;
     }
     to {
-      font-size: 200%;
+      font-size: 175%;
     }
 }
   
@@ -17,12 +17,12 @@ body{
         font-size: 150%;
     }
     to {
-        font-size: 200%;
+        font-size: 175%;
     }
 }
 
 .page-header{
-    font-size: 200%;
+    font-size: 175%;
     margin: 10px 10px 0px 0px;
     padding: 10px;
     animation-name: name_expand;
