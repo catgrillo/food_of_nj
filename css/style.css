@@ -31,6 +31,7 @@ body{
     -webkit-animation-duration: 1s;
 }
 
+
 /* flip card */
 .card{
     background-color: transparent;
@@ -317,17 +318,20 @@ figcaption{
 /* Nav Bar styling */
 /* The layout was modeled after W3Schools example, I changed the colors and styling to fit my site specifically */
 
-.nav {
+.nav-tablet{
+    display: none;
+}
+.nav-phone {
     overflow: hidden;
     background-color: #ffffff;
     position: relative;
 }
   
-  .nav #pages {
+  .nav-phone #pages {
     display: none;
 }
   
-  .nav a {
+  .nav-phone a {
     color: #535353;
     padding: 14px 16px;
     text-decoration: none;
@@ -335,7 +339,7 @@ figcaption{
     display: block;
 }
   
-  .nav a.icon {
+  .nav-phone a.icon {
     background: #d2e2ee;
     border: 2px solid #ffffff;
     display: block;
@@ -344,7 +348,7 @@ figcaption{
     top: 0;
 }
   
-  .nav a:hover {
+  .nav-phone a:hover {
     background-color: #d2e2ee;
     color: black;
 }
@@ -371,3 +375,115 @@ figcaption{
       animation: none;
     }
   }
+
+@media screen and (min-width: 750px) {
+    .nav-phone{
+        display: none;
+    }
+    #menu-title{
+        display: none;
+    }
+    .icon{
+        display: none;
+    }
+    #pages{
+        display: none;
+    }
+
+    #main-title{
+        padding: 20px;
+        font-size: 275%;
+    }
+
+
+    /* Nav styling */
+    .nav-tablet{
+        display: block;
+        position: relative;
+        width: 100%;
+        left: 3%;
+    }
+
+    .nav-tablet a{
+        display: inline-block;
+        background-color: #d2e2ee;
+        width: 17%;
+        text-align: center;
+        text-decoration: none;
+        border: 1px solid #cacaca;
+        padding: 5px;
+        margin: 0 auto;
+        color: #535353;
+    }
+
+    #pages-tablet a{
+        margin: 0px;
+    }
+
+    .nav-tablet .active{
+        font-size: 80%;
+        text-decoration: underline;
+        color: #000000;
+    }
+
+    /* gallery styling */
+    #gallery-content{
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    #gallery-content img{
+        width: 350px;
+    }
+
+    #img1{
+        grid-column-start: 1;
+    }
+    #img2{
+        grid-column-start: 2;
+    }
+    #img3{
+        grid-column-start: 1;
+    }
+    #img4{
+        grid-column-start: 2;
+    }
+    #img5{
+        grid-column-start: 1;
+    }
+    #img6{
+        grid-column-start: 2;
+    }
+    #img7{
+        grid-column-start: 1;
+    }
+    #img8{
+        grid-column-start: 2;
+    }
+    #img9{
+        grid-column: 1/span 2;
+    }
+
+    /* NJ Food styling */
+    #grid-container{
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 5px;
+    }
+
+    #food1{
+        grid-column-start: 1;
+    }
+    #food2{
+        grid-column-start: 2;
+    }
+    #food3{
+        grid-column-start: 1;
+    }
+    #food4{
+        grid-column-start: 2;
+    }
+    #food5{
+        grid-column: 1/span 2;
+    }
+
+}
