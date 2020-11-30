@@ -486,4 +486,47 @@ figcaption{
         grid-column: 1/span 2;
     }
 
+    /* top restaurant styling */
+
+    .restaurant-img{
+        display: inline-block;
+        width: 95%;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .restaurant{
+        margin: 5px;
+        width: 400px;
+        text-align: center;
+    }
+
+    #restaurants{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+
+}
+
+@media screen and (min-width: 1325px) {
+    #main-title{
+        display: inline-block;
+        width: 48%;
+        text-align: left;
+    }
+
+    nav{
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        width: 48%;
+        text-align: right;
+    }
+
+    header{
+        background-color: #d2e2ee;
+    }
 }
