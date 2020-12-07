@@ -21,6 +21,26 @@ body{
     }
 }
 
+/* inspired by homework 4 */
+#jump-desktop a{
+    left: 0;
+    /* padding: 6px; */
+    -webkit-transition: top .5s ease-out;
+    transition: top .5s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -40px;
+    text-decoration: none;
+    color: #535353;
+    background-color: #ffffff;
+    border: 1px solid #cacaca;
+}
+
+#jump-desktop a:focus{
+    top:0px;
+  }
+
+
 .page-header{
     font-size: 175%;
     margin: 10px 10px 0px 0px;
@@ -528,5 +548,49 @@ figcaption{
 
     header{
         background-color: #d2e2ee;
+    }
+
+    .nav-tablet .active{
+        background-color: #cacaca;
+    }
+
+    #pages-tablet{
+        padding-right: 20px;
+    }
+
+    .jump{
+        display: none;
+    }
+
+    /* parallax styling */
+    .one{
+        margin-bottom: 20%;
+        padding: 20px;
+        line-height: 30px;
+        font-size: 125%;
+    }
+    
+    .two{
+        margin-top: 20%;
+        padding: 20px;
+        line-height: 30px;
+        font-size: 125%;
+    }
+
+    .Atlantic-City{
+        width: 80%;
+    }
+
+    #boardwalk{
+        margin-right: 5px;
+        margin-left: 5px;
+        margin-top: 10px;
+        border: 2px solid #cacaca;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    #boardwalk figcaption{
+        font-size: 110%;
     }
 }
