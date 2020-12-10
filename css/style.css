@@ -21,6 +21,11 @@ body{
     }
 }
 
+
+#food5-desktop{
+    display: none;
+}
+
 /* inspired by homework 4 */
 #jump-desktop a{
     left: 0;
@@ -51,52 +56,7 @@ body{
     -webkit-animation-duration: 1s;
 }
 
-
-/* flip card */
-.card{
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px;
-}
-
-.card-inner{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-
-.flip-card:active .card-inner {
-    transform: rotateY(180deg);
-}
-
-.card-front, .card-back{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.card-front{
-    background-color: #bbb;
-    color: black;
-}
-
-.card-back{
-    background-color: dodgerblue;
-    color: white;
-    transform: rotateY(180deg);
-}
-
-
-
 /* footer styling */
-
 footer{
     position: relative;
     bottom: 0px;
@@ -291,9 +251,9 @@ figcaption{
 }
 
 #gallery-content img{
-    width: 300px;
+    width: 275px;
     padding: 10px;
-    margin: 5px;
+    margin-bottom: 5px;
     border-radius: 15px;
     border: 2px solid #d2e2ee;  
 }
@@ -453,7 +413,7 @@ figcaption{
     }
 
     #gallery-content img{
-        width: 350px;
+        width: 300px;
     }
 
     #img1{
@@ -531,7 +491,7 @@ figcaption{
 
 }
 
-@media screen and (min-width: 1325px) {
+@media screen and (min-width: 1250px) {
     #main-title{
         display: inline-block;
         width: 48%;
@@ -558,10 +518,6 @@ figcaption{
         padding-right: 20px;
     }
 
-    .jump{
-        display: none;
-    }
-
     /* parallax styling */
     .one{
         margin-bottom: 20%;
@@ -581,7 +537,7 @@ figcaption{
         width: 80%;
     }
 
-    #boardwalk{
+    figure, #boardwalk{
         margin-right: 5px;
         margin-left: 5px;
         margin-top: 10px;
@@ -592,5 +548,140 @@ figcaption{
 
     #boardwalk figcaption{
         font-size: 110%;
+    }
+
+    .razza-heading{
+        width: 80%;
+    }
+
+    figcaption{
+        font-size: 110%;
+    }
+
+    .restaurant{
+        font-size: 110%;
+        line-height: 25px;
+    }
+
+    #nj-food-pic{
+        width: 60%;
+    }
+
+    .nj-food{
+        font-size: 110%;
+        line-height: 25px;
+    }
+    
+    #food5{
+        display: none;
+    }
+
+    #food5-desktop{
+        display: block;
+        margin: 0 auto;
+        width: 45%;
+        margin-bottom: 10px;
+    }
+
+    #gallery-content{
+        grid-template-columns: 19% 19% 19% 19%;
+        align-items: center;
+        grid-row-gap: 0px;
+        justify-items: normal;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #gallery-content img{
+        border: none;
+        border-radius: 0px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #gallery-content #img1{
+        grid-column: 1 / span 3;
+        grid-row: 3;
+        width: 100%;
+        transition: opacity .5s;
+    }
+    #gallery-content #img2{
+        grid-column: 4 / span 2;
+        width: 100%;
+        grid-row: 3;
+        align-self: stretch;
+        transition: opacity .5s;
+    }
+    #gallery-content #img3{
+        width: 100%;
+        grid-column: 3 / span 4;
+        grid-row: 1;
+        transition: opacity .5s;
+    }
+    #gallery-content #img4{
+        grid-column: 3 / span 3;
+        width: 100%;
+        grid-row: 2;
+        transition: opacity .5s;
+        align-self: flex-end;
+    }
+    #gallery-content #img5{
+        grid-column: 1 / span 2;
+        grid-row: 4;
+        width: 100%;
+        transition: opacity .5s;
+    }
+    #gallery-content #img6{
+        grid-column: 1 / span 2;
+        grid-row: 5;
+        width: 100%;
+        transition: opacity .5s;
+    }
+    #gallery-content #img7{
+        grid-column: 3 / span 3;
+        grid-row: 4 / span 2;
+        width: 100%;
+        align-self: stretch;
+        transition: opacity .5s;
+    }
+    #gallery-content #img8{
+        grid-column: 2 / span 3;
+        width: 100%;
+        transition: opacity .5s;
+    }
+    #gallery-content #img9{
+        grid-column: 1/span 2;
+        grid-row: 1 / span 2;
+        width: 100%;
+        align-self: stretch;
+        transition: opacity .5s;
+    }
+
+    #gallery-content #img1:hover{
+        opacity: .5;
+    }
+    #gallery-content #img2:hover{
+        opacity: .5;
+    }
+    #gallery-content #img3:hover{
+        opacity: .5;
+    }
+    #gallery-content #img4:hover{
+        opacity: .5;
+    }
+    #gallery-content #img5:hover{
+        opacity: .5;
+    }
+    #gallery-content #img6:hover{
+        opacity: .5;
+    }
+    #gallery-content #img7:hover{
+        opacity: .5;
+    }
+    #gallery-content #img8:hover{
+        opacity: .5;
+    }
+    #gallery-content #img9:hover{
+        opacity: .5;
     }
 }
