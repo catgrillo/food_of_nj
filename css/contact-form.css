@@ -1,10 +1,9 @@
 
-/* Some aspects of form were taken from the example in discussion section and the video on contact forms 
-I changed the coloring and some of the style as well to match my page better.
+/* Some aspects of form were inspired by the example in discussion section and the video on contact forms 
+I changed the coloring, borders, fonts and some of the other styling as well to match my page better.
 Additionally, I added a section of the contact form to really make it my own */
 
 #contact-form{
-    /* border: 2px solid #a9ba9d; */
     background-color: #d2e2ee;
     width: 80%;
     margin: 0 auto;

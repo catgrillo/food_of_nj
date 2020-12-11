@@ -1,5 +1,6 @@
 // This function is modeled after the one used in the W3Schools example
 // Link: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+// I made the necessary changes to fit my site
 
 function openMenu() {
     var x = document.getElementById("pages");

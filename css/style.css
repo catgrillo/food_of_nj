@@ -26,10 +26,9 @@ body{
     display: none;
 }
 
-/* inspired by homework 4 */
+/* hidden jump to content button inspired by homework 4 */
 #jump-desktop a{
     left: 0;
-    /* padding: 6px; */
     -webkit-transition: top .5s ease-out;
     transition: top .5s ease-out;
     z-index: 1;
@@ -86,32 +85,6 @@ footer p{
     margin-top: 20px;
 }
 
-/* .footer-link{
-    display: inline-block;
-    margin-left: 10px;
-    margin-top: 10px;
-    text-decoration: none;
-}
-
- footer .footer-icon{
-    padding: 10px;
-    color: #535353;
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-    align-items: center;
-    
-}
-
-footer p{
-    display: inline-block;
-    color: #535353;
-    position: relative;
-    top: -7px;
-    left: 20px;
-} */
-
-
 
 /* Front page styling*/
 #dining-types{
@@ -149,7 +122,6 @@ footer p{
 
 
 /* top restaurants styling */
-/* make top restaurants a flex item */
 .restaurant-img{
     display: none;
 }
@@ -172,7 +144,6 @@ footer p{
 }
 
 .restaurant {
-    /* border: 2px solid #d2e2ee; */
     padding: 10px;
     border-radius: 10px;
     margin: 5px 0px 5px 0px;
@@ -343,6 +314,7 @@ figcaption{
 
 /* Nav Bar styling */
 /* The layout was modeled after W3Schools example, I changed the colors and styling to fit my site specifically */
+/* W3Schools example: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
 
 .nav-tablet{
     display: none;
@@ -610,6 +582,8 @@ figcaption{
         text-align: left;
     }
 
+    /* navigation */
+
     nav{
         display: inline-block;
         position: relative;
@@ -636,6 +610,7 @@ figcaption{
     }
 
     /* parallax styling */
+
     .one{
         margin-bottom: 20%;
         padding: 20px;
@@ -649,6 +624,8 @@ figcaption{
         line-height: 30px;
         font-size: 125%;
     }
+
+    /* header images */
 
     .Atlantic-City{
         width: 80%;
@@ -675,10 +652,7 @@ figcaption{
         font-size: 110%;
     }
 
-    .restaurant{
-        font-size: 110%;
-        line-height: 25px;
-    }
+    /* NJ food */
 
     #nj-food-pic{
         width: 60%;
@@ -699,6 +673,8 @@ figcaption{
         width: 45%;
         margin-bottom: 10px;
     }
+
+    /* gallery */
 
     #gallery-content{
         grid-template-columns: 19% 19% 19% 19%;
@@ -787,9 +763,17 @@ figcaption{
     #gallery-content #img7:hover, #gallery-content #img8:hover, #gallery-content #img9:hover{
         opacity: .5;
     }
+
+    /* top restaurants */
     
     /* Styling of flip card inspired by https://www.w3schools.com/howto/howto_css_flip_card.asp but it was changed 
     to fit the styling of my specific page */
+
+    .restaurant{
+        font-size: 110%;
+        line-height: 25px;
+    }
+
     .restaurant .flip  {
         border: 2px solid #d2e2ee;
         padding: 10px;
