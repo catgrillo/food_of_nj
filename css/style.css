@@ -242,7 +242,7 @@ figcaption{
     padding-top: 10px;
 }
 
-.find-me-link{
+.find-me .find-me-link{
     text-decoration: none;
     color: #535353;
     margin: 10px;
@@ -556,7 +556,7 @@ figcaption{
     }
 
     /* contact page styling */
-    .find-me-link{
+    .find-me .find-me-link{
         display: inline;
         font-size: 175%;
     }
@@ -842,7 +842,7 @@ figcaption{
     }
 
     /* contact page */
-    .find-me-link:hover{
+    .find-me .find-me-link:hover{
         text-transform: uppercase;
     }
 
