@@ -787,8 +787,10 @@ figcaption{
     #gallery-content #img7:hover, #gallery-content #img8:hover, #gallery-content #img9:hover{
         opacity: .5;
     }
-
-    .restaurant .flip-card  {
+    
+    /* Styling of flip card inspired by https://www.w3schools.com/howto/howto_css_flip_card.asp but it was changed 
+    to fit the styling of my specific page */
+    .restaurant .flip  {
         border: 2px solid #d2e2ee;
         padding: 10px;
         border-radius: 10px;
@@ -799,7 +801,7 @@ figcaption{
         perspective: 1000px;
     }
       
-    .flip-card-inner {
+    .flip-inner {
         position: relative;
         width: 100%;
         height: 100%;
@@ -809,11 +811,11 @@ figcaption{
         /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
     } 
       
-    .flip-card:hover .flip-card-inner, .flip-card:active .flip-card-inner, .flip-card:focus .flip-card-inner {
+    .flip:hover .flip-inner, .flip:active .flip-inner, .flip:focus .flip-inner {
         transform: rotateY(180deg);
     }
       
-    .flip-card-front, .flip-card-back {
+    .flip-front, .flip-back {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -821,16 +823,16 @@ figcaption{
         backface-visibility: hidden;
     }
       
-    .flip-card-front {
+    .flip-front {
         background-color: #ffffff;
         color: black;
     }
     
-    .flip-card-front h3{
+    .flip-front h3{
         color: #535353;
     }
       
-    .flip-card-back {
+    .flip-back {
         background-color: #ffffff;
         transform: rotateY(180deg);
     }
@@ -849,4 +851,10 @@ figcaption{
         justify-content: flex-start;
         margin-left: 20px;
     }
+
+    @media (prefers-reduced-motion: reduce){
+        .flip-card-inner{
+          transition: none;
+        }
+      }
 }

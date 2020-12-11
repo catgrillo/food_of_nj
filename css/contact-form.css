@@ -1,7 +1,7 @@
 
-/* Some aspects of form were takenn from the example in discussion section and the video on contact forms */
-/* I changed the coloring and some of the style as well */
-/* be more specific */
+/* Some aspects of form were taken from the example in discussion section and the video on contact forms 
+I changed the coloring and some of the style as well to match my page better.
+Additionally, I added a section of the contact form to really make it my own */
 
 #contact-form{
     /* border: 2px solid #a9ba9d; */
@@ -28,6 +28,11 @@
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#contact-form textarea{
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #contact-form textarea{
@@ -54,4 +59,10 @@
     background-color: #B6CEE2;
     border: 1px solid #535353;
     transition: .5s;
+}
+
+#contact-form #submit-button{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #535353;
+    font-size: 100%;
 }
