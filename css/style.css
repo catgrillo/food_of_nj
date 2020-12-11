@@ -67,6 +67,27 @@ footer{
 
 .footer-link{
     display: inline-block;
+    text-decoration: none;
+    color: #535353;
+    margin-top: 20px;
+    width: 50px;
+}
+
+#footer-items{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer p{
+    color: #535353;
+    margin-top: 20px;
+}
+
+/* .footer-link{
+    display: inline-block;
     margin-left: 10px;
     margin-top: 10px;
     text-decoration: none;
@@ -88,7 +109,7 @@ footer p{
     position: relative;
     top: -7px;
     left: 20px;
-}
+} */
 
 
 
@@ -548,6 +569,15 @@ figcaption{
         font-size: 175%;
     }
 
+    /* footer styling */
+    #footer-items{
+        justify-content: center;
+    }
+
+    footer p{
+        margin-top: 20px;
+    }
+
 
 }
 
@@ -812,5 +842,11 @@ figcaption{
     /* contact page */
     #find-me-link:hover{
         text-transform: uppercase;
+    }
+
+    /* footer styling */
+    #footer-items{
+        justify-content: flex-start;
+        margin-left: 20px;
     }
 }
